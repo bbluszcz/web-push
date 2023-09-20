@@ -6,6 +6,9 @@ const client = appInsights.defaultClient;
 module.exports = async function (context, req) {
   let operationIdOverride = utils.getOperationIdOverride(context);
 
+  console.log("process.env.VAPID_PUBLIC_KEY ", process.env.VAPID_PUBLIC_KEY);
+  console.log("client ", client);
+  
   client.trackEvent({
     name: 'get_vapid-public-key_success',
     tagOverrides: operationIdOverride,
