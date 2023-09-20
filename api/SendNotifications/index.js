@@ -48,8 +48,8 @@ module.exports = async function (context, req) {
 
   webPush.setVapidDetails(
     'mailto:salnikov@gmail.com',
-    process.env.VAPID_PUBLIC_KEY,
-    process.env.VAPID_PRIVATE_KEY
+    'BJ_BKIUDluNnkG3MJbH_RJ4DMo8dutMOsOlKyewLmVPvGSzl4Pun996r2gMGoeJIi2jgRgStwALc3sd-3shzgkc',
+    'IPQyQ2N82i_ctY6gRyo0dVMfHF4C_VcSZN0DkwdtW88'
   );
 
   let queryParams = [];
