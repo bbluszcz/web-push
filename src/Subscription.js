@@ -221,7 +221,7 @@ export default function Subscription(props) {
       getVapidPublicKeyData['vapid-public-key']
     );
 
-    subscribe(convertedVapidKey, process.env.NEXT_PUBLIC_SW_SCOPE)
+    subscribe('BJ_BKIUDluNnkG3MJbH_RJ4DMo8dutMOsOlKyewLmVPvGSzl4Pun996r2gMGoeJIi2jgRgStwALc3sd-3shzgkc', process.env.NEXT_PUBLIC_SW_SCOPE)
       .then((pushSubscription) => {
         dispatch(setPushSubscription(pushSubscription.toJSON()));
         console.log(
